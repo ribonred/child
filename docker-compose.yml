@@ -1,0 +1,11 @@
+services:
+  blumtod:
+    build: .
+    volumes:
+      - ./blumtod:/blumtod
+    entrypoint: /app/blumtod.sh
+  midas:
+    build: .
+    volumes:
+      - ./midas-yielder:/midas
+    entrypoint: /app/midas.sh
